@@ -76,22 +76,33 @@ header {
 .header-container {
     width: 90%;
     margin: auto;
-    display: flex;             /* 1. フレックスボックス化 */
-    justify-content: space-between; /* 2. 両端に配置 */
+    display: grid;             /* 1. フレックスボックス化 */
+    grid-template-columns: 1fr auto 1fr; /* 2. 両端に配置 */
     align-items: center;       /* 3. 垂直方向の中央揃え */
 }
 
-.logo h1 {
+.logo {
+    justify-self: center;   
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    grid-column: 2;        
+}
+
+.logo h3 {
     margin: 0;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
 }
 
 /* ナビゲーションのリスト設定 */
-nav ul {
-    display: flex; /* リストの・を横並びにする */
-    list-style: none; /* ・（黒丸）を消す */
-    margin: 0;
-    padding: 0;
+nav {
+    grid-column: 3;   /* ← 右端の列に固定 */
+    justify-self: end;
+}
+
+nav ul { display: flex; /* リストの・を横並びにする */ 
+    list-style: none; /* ・（黒丸）を消す */ 
+    margin: 0; padding: 0;
 }
 
 nav li {
@@ -188,10 +199,19 @@ footer {
         padding: 10px;
     }
 
-    /* 2. ヘッダーのデザイン変更 */
     .header-container {
-        flex-direction: column; /* 横並び(row)をやめて、縦積み(column)にする */
+        grid-template-columns: 1fr;
+        row-gap: 15px;
         text-align: center;
+    }
+
+    .logo {
+        grid-column: 1;
+    }
+
+    nav {
+        grid-column: 1;
+        justify-self: center;
     }
 
     nav ul {
