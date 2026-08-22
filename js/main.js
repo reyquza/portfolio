@@ -1,15 +1,24 @@
-// 1. HTMLの要素を取得する（Pythonで変数に代入する感覚）
-const form = document.querySelector('form'); // <form>タグを見つけてくる
+/*
+ * Public profile and project URLs are kept here so they are easy to update.
+ */
+const links = {
+  github: "https://github.com/reyquza?tab=repositories",
+  chatGithub: "https://github.com/reyquza/2WIS_skill_test",
+};
 
-// 2. イベントリスナーを設定する（「もし送信されたら...」という待機命令）
-form.addEventListener('submit', function(event) {
-    
-    // 3. デフォルトの動作（ページのリロード）を止める
-    event.preventDefault();
+document.querySelectorAll("[data-link]").forEach((element) => {
+  const url = links[element.dataset.link];
 
-    // 4. アラートを出す（ポップアップ）
-    alert('お問い合わせありがとうございます！\n（※これはデモです。実際には送信されません）');
+  if (url) {
+    element.href = url;
+    element.target = "_blank";
+    element.rel = "noreferrer";
+    return;
+  }
 
-    // 5. フォームの中身を空にする
-    form.reset();
+  element.setAttribute("aria-disabled", "true");
+  element.setAttribute("title", "URL to be added");
+  element.addEventListener("click", (event) => event.preventDefault());
 });
+
+document.querySelector("#year").textContent = new Date().getFullYear();

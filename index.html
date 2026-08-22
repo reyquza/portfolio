@@ -1,98 +1,189 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="./css/style.css">
-</head>
-<body>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Ray — University of Tokyo student interested in machine learning, quantitative research, software engineering, and physical AI." />
+    <meta name="theme-color" content="#ffffff" />
+    <meta property="og:title" content="Ray — Portfolio" />
+    <meta property="og:description" content="University of Tokyo student interested in machine learning, quantitative research, software engineering, and physical AI." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="./assets/og.png" />
+    <title>Ray — Portfolio</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/main.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
 
-    <header>
-        <div class="header-container">
-            <div class="logo">
-                <img src="./assets/Ray icon ver3.PNG" alt="logo" height="80px">
-                <h3>Ray</h3>
-            </div>
-
-            <nav>
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="site-name" href="#top">Ray</a>
+        <nav aria-label="Main navigation">
+          <a href="#projects">Projects</a>
+          <a href="#experience">Experience</a>
+          <a href="#skills">Skills</a>
+          <a data-link="github" href="https://github.com/reyquza?tab=repositories">GitHub</a>
+        </nav>
+      </div>
     </header>
 
-    <div class="container">
-        <section class="project" id="about">
-            <h2>About Me</h2>
-            <p>東京大学理科一類　在籍</p>
-            <p>Webアプリ開発・データ分析・コンピューティングシステム・AIなど多方面を勉強中</p>
-        </section>
+    <main id="main">
+      <section class="hero container" id="top" aria-labelledby="hero-title">
+        <p class="hero-label">Portfolio</p>
+        <h1 id="hero-title">Ray</h1>
+        <p class="hero-subtitle">University of Tokyo Student</p>
+        <p class="hero-interests">Generative Models & LLMs · Quantitative Finance · Software Engineering · Physical AI</p>
+        <a class="button" data-link="github" href="https://github.com/reyquza?tab=repositories">View GitHub repositories <span aria-hidden="true">↗</span></a>
+      </section>
 
-        <section class="project" id="projects">
-            <h2 style="text-align: center; margin-bottom: 30px;">Projects</h2>
-            
-            <div class="project-grid">
-                <div class="project-card">
-                    <h3>台風発達予測AI</h3>
-                    <p>気象データを解析し、ディープラーニングで台風の進路と強度を予測。</p>
-                    <div class="tech-stack">
-                        <span>Python</span>
-                        <span>schikit-learn</span>
-                        <span>dask</span>
-                    </div>
-                </div>
+      <section class="section section-muted" id="projects" aria-labelledby="projects-title">
+        <div class="container">
+          <div class="section-heading">
+            <h2 id="projects-title">Featured Projects</h2>
+            <p>Selected software and data analysis projects.</p>
+          </div>
 
-                <div class="project-card">
-                    <h3>スーパーマリオ（簡易版）</h3>
-                    <p>当たり判定や重力物理演算をゼロから実装したアクションゲーム。</p>
-                    <div class="tech-stack">
-                        <span>Python</span>
-                        <span>Pygame</span>
-                    </div>
+          <div class="projects-grid">
+            <article class="project-card">
+              <div class="project-content">
+                <p class="project-type">Web Application</p>
+                <h3>Real-time Chat App</h3>
+                <p>A LINE-style one-to-one chat application with access control, duplicate DM prevention, and REST + WebSocket communication.</p>
+                <ul class="tech-list" aria-label="Technologies used">
+                  <li>Next.js</li><li>TypeScript</li><li>FastAPI</li><li>SQLAlchemy</li><li>SQLite</li><li>WebSocket</li>
+                </ul>
+                <div class="project-links">
+                  <a data-link="chatGithub" href="https://github.com/reyquza/2WINS_skill_test">GitHub ↗</a>
                 </div>
+              </div>
+            </article>
 
-                <div class="project-card">
-                    <h3>Instagram自動返信bot</h3>
-                    <p>APIを活用し、特定のキーワードに反応してDMを自動送信するシステム。</p>
-                    <div class="tech-stack">
-                        <span>GAS</span>
-                        <span>Instagram Graph API</span>
-                        <span>Google spreadsheet</span>
-                    </div>
+            <article class="project-card">
+              <div class="project-media">
+                <video controls muted playsinline preload="metadata" aria-label="NextLearn application demonstration">
+                  <source src="./assets/nextlearn-demo.mp4" type="video/mp4" />
+                  Your browser does not support embedded video.
+                </video>
+              </div>
+              <div class="project-content">
+                <p class="project-type">AI Learning Tool</p>
+                <h3>NextLearn</h3>
+                <p>A learning support application for AI-assisted grading, explanations, and study management.</p>
+                <ul class="tech-list" aria-label="Technologies used">
+                  <li>FastAPI</li><li>PostgreSQL</li><li>JavaScript</li><li>Gemini API</li><li>Firebase</li>
+                </ul>
+                <div class="project-links">
+                  <span class="private-label">Private repository</span>
                 </div>
+              </div>
+            </article>
 
-            </div>
-        </section>
-    </div>
+            <article class="project-card">
+              <div class="project-gallery" aria-label="Evolutionary dynamics simulation outputs">
+                <img src="./assets/3.png" alt="Simulation comparing rare trait frequency in a large population and a population bottleneck" loading="lazy" />
+                <img src="./assets/normal.png" alt="Host-parasite spatial patterns and population dynamics from a numerical simulation" loading="lazy" />
+              </div>
+              <div class="project-content">
+                <p class="project-type">Scientific Computing</p>
+                <h3>Evolutionary Dynamics Simulations</h3>
+                <p>Numerical simulations, visualizations, and analysis of evolutionary phenomena such as neutral evolution and sexual reproduction for a University of Tokyo course.</p>
+                <p class="project-note">Course grade: A+</p>
+                <ul class="tech-list" aria-label="Technologies used">
+                  <li>Python</li><li>NumPy</li><li>Matplotlib</li>
+                </ul>
+                <div class="project-links">
+                  <span class="private-label">Private repository</span>
+                  <span class="private-reason">Course code is not publicly shared.</span>
+                </div>
+              </div>
+            </article>
 
-    <section id="contact" class="container">
-        <h2 style="text-align: center; margin-bottom: 30px;">Contact</h2>
-        <div class="contact-form">
-            <form>
-                <div class="form-group">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" placeholder="お名前">
+            <article class="project-card">
+              <div class="project-media">
+                <img src="./assets/KHANUN.png" alt="Map showing typhoon heat potential and the path of Typhoon Khanun" loading="lazy" />
+              </div>
+              <div class="project-content">
+                <p class="project-type">Data Analysis</p>
+                <h3>Ocean Data Analysis</h3>
+                <p>Analyzed approximately 20 GB of ocean data for a university course. Combined derived tropical cyclone heat potential with storm-track data for intensity prediction, reaching roughly 70% accuracy.</p>
+                <ul class="tech-list" aria-label="Technologies used">
+                  <li>Python</li><li>xarray</li><li>dask</li><li>scikit-learn</li>
+                </ul>
+                <div class="project-links">
+                  <span class="private-label">Private repository</span>
+                  <span class="private-reason">Course code is not publicly shared.</span>
                 </div>
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" placeholder="メールアドレス">
-                </div>
-                <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea id="message" rows="5" placeholder="お問い合わせ内容"></textarea>
-                </div>
-                <button type="submit" class="btn">Send Message</button>
-            </form>
+              </div>
+            </article>
+          </div>
         </div>
-    </section>
+      </section>
+
+      <section class="section container" id="experience" aria-labelledby="experience-title">
+        <div class="section-heading">
+          <h2 id="experience-title">Experience</h2>
+        </div>
+        <article class="experience-row">
+          <div>
+            <p class="experience-date">Sep 2026 —</p>
+            <span class="status">Incoming</span>
+          </div>
+          <div>
+            <h3>Research Intern</h3>
+            <p class="experience-place">Goda Laboratory, The University of Tokyo</p>
+            <p>Planned areas of interest include physical AI, biochemistry, and computer vision.</p>
+          </div>
+          <div>
+            <p class="experience-date">Aug 2026 —</p>
+            <span class="status">In progress</span>
+          </div>
+          <div>
+            <h3>Commissioned Software Development<h3>
+            <p>Implementing monetization features for a user-generated content platform.</p>
+          </div>
+        </article>
+      </section>
+
+      <section class="section section-muted" aria-labelledby="learning-title">
+        <div class="container">
+          <div class="section-heading">
+            <h2 id="learning-title">Ongoing Learning</h2>
+          </div>
+          <article class="learning-row">
+            <div>
+              <p class="experience-date">Matsuo Lab</p>
+              <span class="status">In progress</span>
+            </div>
+            <ul>
+              <li>Large Language Model Course I</li>
+              <li>AI Quant Trading Course</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="skills" aria-labelledby="skills-title">
+        <div class="container">
+          <div class="section-heading">
+            <h2 id="skills-title">Skills</h2>
+          </div>
+          <div class="skills-grid">
+            <div><h3>Languages</h3><p>Python, TypeScript, JavaScript</p></div>
+            <div><h3>Web</h3><p>FastAPI, Next.js, SQLAlchemy</p></div>
+            <div><h3>ML</h3><p>PyTorch, transformers</p></div>
+            <div><h3>Tools</h3><p>Docker, Git</p></div>
+          </div>
+        </div>
+      </section>
+
+    </main>
 
     <footer>
-        <p>&copy; Ray. All Rights Reserved.</p>
+      <div class="container footer-inner">
+        <p>© <span id="year">2026</span> Ray. All rights reserved.</p>
+        <a href="#top">Back to top ↑</a>
+      </div>
     </footer>
-<script src="./js/main.js"></script>
-</body>
+  </body>
 </html>
