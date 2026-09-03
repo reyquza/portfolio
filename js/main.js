@@ -3,7 +3,7 @@
  */
 const links = {
   github: "https://github.com/reyquza?tab=repositories",
-  chatGithub: "https://github.com/reyquza/2WIS_skill_test",
+  chatGithub: "https://github.com/reyquza/2WINS_skill_test",
 };
 
 document.querySelectorAll("[data-link]").forEach((element) => {
