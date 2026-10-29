@@ -18,7 +18,7 @@ window.portfolioContent = {
       period: "Oct 2026 — Present",
       points: [
         "Researching inference optimization for vision-language-action agents that play Minecraft through screen input and computer use.",
-        "Built a lightweight local VLM agent on a 6 GB RTX 3050 Laptop GPU using QLoRA fine-tuning and 8-bit quantization.",
+        "Built a lightweight fine-tuned local VLM agent that can survive from creeper explosion.",
       ],
     },
     {
@@ -36,27 +36,19 @@ window.portfolioContent = {
       period: "Sep 2026 — Present",
       points: [
         "Developing AI to detect Parkinson's disease from fruit-fly movement as an alternative to mice.",
-        "Built the pipeline from raw laboratory video as AI lead using PyTorch, YOLO, and SLEAP; work in English in an international team.",
-      ],
-    },
-    {
-      role: "Commissioned Software Development",
-      organization: "Independent project",
-      period: "Aug 2026 — Present",
-      points: [
-        "Implementing monetization features for a user-generated content platform.",
+        "Built the pipeline from raw laboratory video as AI lead using PyTorch, YOLO; work in English in an international team.",
       ],
     },
   ],
 
   projects: [
     {
-      type: "Physical AI Research",
+      type: "VLA/LLM Research",
       title: "Minecraft VLA Agent",
-      description: "A lightweight vision-language agent that runs locally on a 6 GB NVIDIA GPU. Fine-tuned Qwen3.5-2B with QLoRA and quantized it to 8-bit for real-time decisions.",
-      metrics: "Decision time: ~0.6 s locally vs. 9–21 s with cloud VLMs. Action accuracy: 10.1% → 94.2%.",
-      technologies: ["Python", "PyTorch", "Hugging Face", "QLoRA", "Quantization"],
-      privateReason: "Research code is not publicly shared.",
+      description: "A lightweight vision-language agent that runs locally on a 6 GB GPU. Fine-tuned model with QLoRA and quantized it for real-time decisions. Our model can now survive creeper explosions.",
+      // metrics: "Decision time: ~0.6 s locally vs. 9–21 s with cloud VLMs. Action accuracy: 10.1% → 94.2%.",
+      technologies: ["Python", "PyTorch", "World models", "QLoRA", "Quantization"],
+      privateReason: "Research code is not publicly shared since my paper has not published yet.",
     },
     {
       type: "AI Learning Application",
@@ -67,14 +59,17 @@ window.portfolioContent = {
         src: "./assets/nextlearn-demo.mp4",
         label: "NextLearn application demonstration",
       },
-      privateReason: "Project code is not publicly shared.",
+      privateReason: "Project code is currently not available.",
     },
     {
       type: "Computer Architecture",
       title: "4-bit CPU from Scratch",
       description: "Designed a CPU from Boolean algebra up in one week, including a custom instruction set and assembly language. Wired logic-gate ICs on breadboards with six instructions and a 16-instruction ROM.",
       technologies: ["Logic Circuits", "Instruction Set Design", "Digital Electronics"],
-      privateReason: "Hardware project; source is not publicly shared.",
+      image: {
+        src: "./assets/cpu_img.jpg",
+        alt: "Handmade CPU",
+      },
     },
     {
       type: "Web Application",
@@ -101,7 +96,9 @@ window.portfolioContent = {
           alt: "Host-parasite spatial patterns and population dynamics from a numerical simulation",
         },
       ],
-      privateReason: "Course code is not publicly shared.",
+      links: [
+        { label: "GitHub ↗", url: "https://github.com/reyquza/Evolution_Simulation-UTokyo" },
+      ],
     },
     {
       type: "Data Analysis · Course Project",
@@ -112,7 +109,7 @@ window.portfolioContent = {
         src: "./assets/KHANUN.png",
         alt: "Map showing typhoon heat potential and the path of Typhoon Khanun",
       },
-      privateReason: "Course code is not publicly shared.",
+      privateReason: "Code is not publicly shared currently.",
     },
   ],
 
