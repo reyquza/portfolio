@@ -3,14 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Ray — University of Tokyo student in the Department of Information and Communication Engineering." />
+    <meta name="description" content="Ray — AI and full-stack engineering intern and student researcher at the University of Tokyo." />
     <meta name="theme-color" content="#ffffff" />
     <meta property="og:title" content="Ray — Portfolio" />
-    <meta property="og:description" content="University of Tokyo student in the Department of Information and Communication Engineering." />
+    <meta property="og:description" content="AI systems, efficient vision-language agents, full-stack engineering, and computer vision." />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="./assets/og.png" />
     <title>Ray — Portfolio</title>
     <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/content.js" defer></script>
     <script src="./js/main.js" defer></script>
   </head>
   <body>
@@ -20,10 +21,12 @@
       <div class="container header-inner">
         <a class="site-name" href="#top">Ray</a>
         <nav aria-label="Main navigation">
-          <a href="#projects">Projects</a>
           <a href="#experience">Experience</a>
+          <a href="#projects">Projects</a>
+          <a href="#education">Education</a>
           <a href="#skills">Skills</a>
-          <a data-link="github" href="https://github.com/reyquza?tab=repositories">GitHub</a>
+          <a data-profile-link="github" href="https://github.com/reyquza?tab=repositories">GitHub</a>
+          <a data-profile-link="linkedin" href="#" hidden>LinkedIn</a>
         </nav>
       </div>
     </header>
@@ -32,135 +35,48 @@
       <section class="hero container" id="top" aria-labelledby="hero-title">
         <p class="hero-label">Portfolio</p>
         <h1 id="hero-title">Ray</h1>
+        <p class="hero-role">AI / Full-Stack Engineering Intern &amp; Student Researcher</p>
         <p class="hero-subtitle">University of Tokyo</p>
         <p class="hero-department">Department of Information and Communication Engineering<br />Faculty of Engineering</p>
-        <p class="hero-interests">Generative Models & LLMs · Quantitative Finance · Software Engineering · Physical AI</p>
-        <a class="button" data-link="github" href="https://github.com/reyquza?tab=repositories">View GitHub repositories <span aria-hidden="true">↗</span></a>
-      </section>
-
-      <section class="section section-muted" id="projects" aria-labelledby="projects-title">
-        <div class="container">
-          <div class="section-heading">
-            <h2 id="projects-title">Featured Projects</h2>
-            <p>Selected software and data analysis projects.</p>
-          </div>
-
-          <div class="projects-grid">
-            <article class="project-card">
-              <div class="project-content">
-                <p class="project-type">Web Application</p>
-                <h3>Real-time Chat App</h3>
-                <p>A LINE-style one-to-one chat application with access control, duplicate DM prevention, and REST + WebSocket communication.</p>
-                <ul class="tech-list" aria-label="Technologies used">
-                  <li>Next.js</li><li>TypeScript</li><li>FastAPI</li><li>SQLAlchemy</li><li>SQLite</li><li>WebSocket</li>
-                </ul>
-                <div class="project-links">
-                  <a data-link="chatGithub" href="https://github.com/reyquza/2WINS_skill_test">GitHub ↗</a>
-                </div>
-              </div>
-            </article>
-
-            <article class="project-card">
-              <div class="project-media">
-                <video controls muted playsinline preload="metadata" aria-label="NextLearn application demonstration">
-                  <source src="./assets/nextlearn-demo.mp4" type="video/mp4" />
-                  Your browser does not support embedded video.
-                </video>
-              </div>
-              <div class="project-content">
-                <p class="project-type">AI Learning Tool</p>
-                <h3>NextLearn</h3>
-                <p>A learning support application for AI-assisted grading, explanations, and study management.</p>
-                <ul class="tech-list" aria-label="Technologies used">
-                  <li>FastAPI</li><li>PostgreSQL</li><li>JavaScript</li><li>Gemini API</li><li>Firebase</li>
-                </ul>
-                <div class="project-links">
-                  <span class="private-label">Private repository</span>
-                </div>
-              </div>
-            </article>
-
-            <article class="project-card">
-              <div class="project-gallery" aria-label="Evolutionary dynamics simulation outputs">
-                <img src="./assets/3.png" alt="Simulation comparing rare trait frequency in a large population and a population bottleneck" loading="lazy" />
-                <img src="./assets/normal.png" alt="Host-parasite spatial patterns and population dynamics from a numerical simulation" loading="lazy" />
-              </div>
-              <div class="project-content">
-                <p class="project-type">Scientific Computing</p>
-                <h3>Evolutionary Dynamics Simulations</h3>
-                <p>Numerical simulations, visualizations, and analysis of evolutionary phenomena such as neutral evolution and sexual reproduction for a University of Tokyo course.</p>
-                <p class="project-note">Course grade: A+</p>
-                <ul class="tech-list" aria-label="Technologies used">
-                  <li>Python</li><li>NumPy</li><li>Matplotlib</li>
-                </ul>
-                <div class="project-links">
-                  <span class="private-label">Private repository</span>
-                  <span class="private-reason">Course code is not publicly shared.</span>
-                </div>
-              </div>
-            </article>
-
-            <article class="project-card">
-              <div class="project-media">
-                <img src="./assets/KHANUN.png" alt="Map showing typhoon heat potential and the path of Typhoon Khanun" loading="lazy" />
-              </div>
-              <div class="project-content">
-                <p class="project-type">Data Analysis</p>
-                <h3>Ocean Data Analysis</h3>
-                <p>Analyzed approximately 20 GB of ocean data. Combined derived tropical cyclone heat potential with storm-track data for intensity prediction, reaching roughly 70% accuracy.</p>
-                <ul class="tech-list" aria-label="Technologies used">
-                  <li>Python</li><li>xarray</li><li>dask</li><li>scikit-learn</li>
-                </ul>
-                <div class="project-links">
-                  <span class="private-label">Private repository</span>
-                  <span class="private-reason">Course code is not publicly shared.</span>
-                </div>
-              </div>
-            </article>
-          </div>
+        <p class="hero-summary">I build AI systems end to end and research efficient vision-language agents for real-time physical AI.</p>
+        <p class="hero-interests">Efficient VLM / VLA · AI Systems · Computer Vision · Quantitative Finance</p>
+        <div class="hero-actions">
+          <a class="button" data-profile-link="github" href="https://github.com/reyquza?tab=repositories">View GitHub repositories <span aria-hidden="true">↗</span></a>
+          <a class="button button-secondary" data-profile-link="linkedin" href="#" hidden>LinkedIn <span aria-hidden="true">↗</span></a>
         </div>
       </section>
 
-      <section class="section container" id="experience" aria-labelledby="experience-title">
-        <div class="section-heading">
-          <h2 id="experience-title">Experience</h2>
-        </div>
-        <article class="experience-row">
-          <div>
-            <p class="experience-date">Sep 2026 —</p>
-            <span class="status">In progress</span>
-          </div>
-          <div>
-            <h3>Research Intern</h3>
-            <p class="experience-place">Goda Laboratory, The University of Tokyo</p>
-            <p>Planned areas of interest include physical AI, biochemistry, and computer vision.</p>
-          </div>
-          <div>
-            <p class="experience-date">Aug 2026 —</p>
-            <span class="status">In progress</span>
-          </div>
-          <div>
-            <h3>Commissioned Software Development</h3>
-            <p>Implementing monetization features for a user-generated content platform.</p>
-          </div>
-        </article>
-      </section>
-
-      <section class="section section-muted" aria-labelledby="learning-title">
+      <section class="section section-muted" id="experience" aria-labelledby="experience-title">
         <div class="container">
           <div class="section-heading">
-            <h2 id="learning-title">Ongoing Learning</h2>
+            <h2 id="experience-title">Experience</h2>
+            <p>Current research and engineering work.</p>
           </div>
-          <article class="learning-row">
-            <div>
-              <p class="experience-date">Matsuo Lab Educational Program</p>
-              <span class="status">In progress</span>
-            </div>
-            <ul>
-              <li>Large Language Model Course I</li>
-              <li>AI Quant Trading Course</li>
-            </ul>
-          </article>
+          <div class="experience-list" id="experience-list"></div>
+        </div>
+      </section>
+
+      <section class="section" id="projects" aria-labelledby="projects-title">
+        <div class="container">
+          <div class="section-heading">
+            <h2 id="projects-title">Selected Work</h2>
+            <p>Research, software, hardware, and data projects.</p>
+          </div>
+          <div class="projects-grid" id="projects-grid"></div>
+        </div>
+      </section>
+
+      <section class="section section-muted" id="education" aria-labelledby="education-title">
+        <div class="container">
+          <div class="section-heading">
+            <h2 id="education-title">Education &amp; Learning</h2>
+          </div>
+          <div class="education-list" id="education-list"></div>
+
+          <div class="subsection-heading">
+            <h3>Recognition</h3>
+          </div>
+          <div class="recognition-grid" id="recognition-grid"></div>
         </div>
       </section>
 
@@ -169,15 +85,9 @@
           <div class="section-heading">
             <h2 id="skills-title">Skills</h2>
           </div>
-          <div class="skills-grid">
-            <div><h3>Languages</h3><p>Python, TypeScript, JavaScript</p></div>
-            <div><h3>Web</h3><p>FastAPI, Next.js, SQLAlchemy</p></div>
-            <div><h3>ML</h3><p>PyTorch, transformers</p></div>
-            <div><h3>Tools</h3><p>Docker, Git</p></div>
-          </div>
+          <div class="skills-grid" id="skills-grid"></div>
         </div>
       </section>
-
     </main>
 
     <footer>
@@ -186,5 +96,9 @@
         <a href="#top">Back to top ↑</a>
       </div>
     </footer>
+
+    <noscript>
+      <p class="noscript-message">This portfolio requires JavaScript to display project and experience details.</p>
+    </noscript>
   </body>
 </html>
