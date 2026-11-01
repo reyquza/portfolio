@@ -60,7 +60,9 @@ window.portfolioContent = {
         src: "./assets/nextlearn-demo.mp4",
         label: "NextLearn application demonstration",
       },
-      privateReason: "Project code is currently not available.",
+      links: [
+        { label: "GitHub ↗", url: "https://github.com/reyquza/study-app" },
+      ],
     },
     {
       type: "Computer Architecture",
