@@ -27,7 +27,6 @@ window.portfolioContent = {
       period: "Sep 2026 — Present",
       points: [
         "Build client AI systems end to end across frontend, backend, databases, AI models, and deployment.",
-        "Developing a construction DX system that reads design drawings to automate cost estimates; responsible for AWS deployment.",
       ],
     },
     {
@@ -48,13 +47,15 @@ window.portfolioContent = {
       description: "A lightweight vision-language agent that runs locally on a 6 GB GPU. Fine-tuned model with QLoRA and quantized it for real-time decisions. Our model can now survive creeper explosions.",
       // metrics: "Decision time: ~0.6 s locally vs. 9–21 s with cloud VLMs. Action accuracy: 10.1% → 94.2%.",
       technologies: ["Python", "PyTorch", "World models", "QLoRA", "Quantization"],
-      privateReason: "Research code is not publicly shared since my paper has not published yet.",
+      links: [
+        { label: "GitHub ↗", url: "https://github.com/reyquza/study-app" },
+      ],
     },
     {
       type: "AI Learning Application",
       title: "NextLearn",
       description: "Built in one month so my sister could use AI-assisted learning without an expensive service. Includes question registration, scheduling, explanations, and automatic grading.",
-      technologies: ["Next.js", "FastAPI", "PostgreSQL", "Docker", "LLM API"],
+      technologies: ["FastAPI", "PostgreSQL", "Docker", "LLM API"],
       video: {
         src: "./assets/nextlearn-demo.mp4",
         label: "NextLearn application demonstration",
@@ -77,7 +78,7 @@ window.portfolioContent = {
       description: "A LINE-style one-to-one chat application with access control, duplicate DM prevention, and REST + WebSocket communication.",
       technologies: ["Next.js", "TypeScript", "FastAPI", "SQLAlchemy", "SQLite", "WebSocket"],
       links: [
-        { label: "GitHub ↗", url: "https://github.com/reyquza/2WIS_skill_test" },
+        { label: "GitHub ↗", url: "https://github.com/reyquza/2WINS_skill_test" },
       ],
     },
     {
