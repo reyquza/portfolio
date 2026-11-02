@@ -49,6 +49,8 @@ window.portfolioContent = {
       image: {
         src: "./assets/LLMATCH-demo.jpg",
         alt: "LLMATCH's demo",
+        loading: "eager",
+        fetchPriority: "high",
       },
       privateReason: "Code is not publicly shared currently since my paper has not published yet.",
     },

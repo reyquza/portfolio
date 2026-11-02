@@ -39,9 +39,13 @@ const renderProjectMedia = (project) => {
   }
 
   if (project.image) {
+    const loading = project.image.loading ?? "lazy";
+    const fetchPriority = project.image.fetchPriority
+      ? ` fetchpriority="${escapeHtml(project.image.fetchPriority)}"`
+      : "";
     return `
       <div class="project-media">
-        <img src="${escapeHtml(project.image.src)}" alt="${escapeHtml(project.image.alt)}" loading="lazy" />
+        <img src="${escapeHtml(project.image.src)}" alt="${escapeHtml(project.image.alt)}" loading="${escapeHtml(loading)}"${fetchPriority} />
       </div>`;
   }
 
