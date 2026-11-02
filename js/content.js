@@ -45,11 +45,8 @@ window.portfolioContent = {
       type: "VLA/LLM Research",
       title: "Minecraft VLA Agent",
       description: "A lightweight vision-language agent that runs locally on a 6 GB GPU. Fine-tuned model with QLoRA and quantized it for real-time decisions. Our model can now survive creeper explosions.",
-      // metrics: "Decision time: ~0.6 s locally vs. 9–21 s with cloud VLMs. Action accuracy: 10.1% → 94.2%.",
       technologies: ["Python", "PyTorch", "World models", "QLoRA", "Quantization"],
-      links: [
-        { label: "GitHub ↗", url: "https://github.com/reyquza/study-app" },
-      ],
+      privateReason: "Code is not publicly shared currently since my paper has not published yet.",
     },
     {
       type: "AI Learning Application",
@@ -62,6 +59,7 @@ window.portfolioContent = {
       },
       links: [
         { label: "GitHub ↗", url: "https://github.com/reyquza/study-app" },
+        { label: "Deployed ↗", url: "https://nextlearn-7ey4.onrender.com"},
       ],
     },
     {
@@ -77,8 +75,12 @@ window.portfolioContent = {
     {
       type: "Web Application",
       title: "Real-time Chat App",
-      description: "A LINE-style one-to-one chat application with access control, duplicate DM prevention, and REST + WebSocket communication.",
+      description: "A LINE-style real-time chat application with access control and duplicate DM prevention using REST + WebSocket, originally built as an internship skill test and published with explicit company permission, which I plan to migrate from SQLite to PostgreSQL to improve write concurrency and handle high-volume message traffic.",
       technologies: ["Next.js", "TypeScript", "FastAPI", "SQLAlchemy", "SQLite", "WebSocket"],
+      video: {
+        src: "./assets/relay-demo.mp4",
+        label: "Relay application demonstration",
+      },
       links: [
         { label: "GitHub ↗", url: "https://github.com/reyquza/2WINS_skill_test" },
       ],
