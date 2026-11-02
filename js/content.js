@@ -47,7 +47,7 @@ window.portfolioContent = {
       description: "A lightweight vision-language agent that runs locally on a 6 GB GPU. Fine-tuned model with QLoRA and quantized it for real-time decisions. Our model can now survive creeper explosions. The image above is merely a demo of my research.",
       technologies: ["Python", "PyTorch", "World models", "QLoRA", "Quantization"],
       image: {
-        src: "./assets/LLMATCH-demo.png",
+        src: "./assets/LLMATCH-demo.jpg",
         alt: "LLMATCH's demo",
       },
       privateReason: "Code is not publicly shared currently since my paper has not published yet.",
