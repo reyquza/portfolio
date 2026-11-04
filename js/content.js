@@ -164,7 +164,7 @@ window.portfolioContent = {
   skills: [
     {
       category: "Programming",
-      items: ["Python", "TypeScript", "JavaScript", "C", "SQL"],
+      items: ["Python", "TypeScript", "JavaScript", "C", "C++", "Rust", "SQL", "R"],
     },
     {
       category: "Web / Cloud",
