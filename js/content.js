@@ -168,11 +168,11 @@ window.portfolioContent = {
     },
     {
       category: "Web / Cloud",
-      items: ["Next.js", "FastAPI", "PostgreSQL", "AWS", "Docker", "Linux", "Git"],
+      items: ["Next.js", "FastAPI", "PostgreSQL", "SQLAlchemy", "AWS", "Docker", "Linux", "Git"],
     },
     {
       category: "AI / ML",
-      items: ["PyTorch", "Hugging Face", "LoRA / QLoRA", "YOLO", "SLEAP", "scikit-learn"],
+      items: ["PyTorch", "Hugging Face transformers", "LoRA / QLoRA", "YOLO", "scikit-learn"],
     },
   ],
 };
