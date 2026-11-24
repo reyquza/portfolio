@@ -143,8 +143,8 @@ window.portfolioContent = {
     {
       title: "AI Quant Trading Course",
       organization: "Matsuo-Iwasawa Laboratory",
-      period: "Ongoing",
-      status: "In progress",
+      period: "Completed Nov 2026",
+      status: "Completed",
     },
   ],
 
